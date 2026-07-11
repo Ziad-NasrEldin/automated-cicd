@@ -1,0 +1,24 @@
+name: Toolkit self-test
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  actions: read
+  contents: read
+
+jobs:
+  test:
+    if: github.ref_name == 'main'
+    uses: ./.github/workflows/deploy.yml
+    with:
+      provider: github
+      environment: production
+      production-branch: main
+      caller-workflow-file: self-test.yml
+      node-version: "22"
+      install-command: ""
+      validation-command: npm test && npm run check

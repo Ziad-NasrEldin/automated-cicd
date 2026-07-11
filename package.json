@@ -1,0 +1,16 @@
+{
+  "name": "@ziadnasreldin/automated-cicd",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "cicd-init": "./bin/cicd-init.mjs"
+  },
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check bin/cicd-init.mjs && node --check src/generate.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
