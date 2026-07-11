@@ -3,6 +3,7 @@
 ## Purpose
 
 This repository owns public reusable GitHub Actions workflows and a small onboarding CLI for branch-driven CI/CD.
+Repository onboarding agents must follow `docs/AGENT-ONBOARDING.md`.
 
 ## Contracts
 

@@ -2,6 +2,8 @@
 
 Public reusable GitHub Actions for branch-push CI/CD across personal and organization-owned repositories.
 
+Agents onboarding a repository should follow [the agent onboarding runbook](docs/AGENT-ONBOARDING.md).
+
 ## What it supports
 
 - Vercel production and preview deployments.
